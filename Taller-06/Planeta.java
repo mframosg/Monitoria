@@ -1,15 +1,22 @@
-
-public class Planeta{
-
+public class Planeta {
     private String nombre;
     private double masa;
     public int contador = 0;
 
-    public Planeta(){
-        new Planeta("tierra",5.972);
+    public Planeta() {
+        this("Tierra", 5.972);
     }
-    public Planeta(String n, double m){
+
+    public Planeta(String n, double m) {
         this.nombre = n;
+        this.masa = m;
+    }
+
+    public void setNombre(String n) {
+        this.nombre = n;
+    }
+
+    public void setMasa(double m) {
         this.masa = m;
     }
 
@@ -21,22 +28,11 @@ public class Planeta{
         return masa;
     }
 
-    public void setNombre(String nombre) {
-       this.nombre = nombre;
+    public static Planeta planetaMedio(Planeta p) {
+        Planeta astro = new Planeta();
+        astro.setNombre(p.nombre);
+        astro.setMasa((p.masa) / 2);
+        return astro;
     }
 
-    public void setMasa(double masa) {
-        this.masa = masa;
-    }
-
-    public Planeta planetaMedio(Planeta p){
-        Planeta p1 = new Planeta(nombre,masa/2);
-        return p1;
-    }
-
-    public static void main(String[] args) {
-        Planeta p1 = new Planeta();
-        Planeta p2 = p1.planetaMedio(p1);
-        System.out.println(p2.getNombre() + p2.getMasa());
-    }
 }
