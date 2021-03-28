@@ -18,7 +18,6 @@ public class Orco1 extends Monstruo1 {
         return grunyido;
     }
 
-    @Override
     public void moverse() {
         System.out.println("Soy un orco, estoy corriendo " + getNombre());
     }
