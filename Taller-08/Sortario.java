@@ -9,8 +9,7 @@ public class Sortario {
                 flag1 = true;
             else if (a[i] == 13)
                 flag13 = true;
-
         }
-        return (flag1 && flag3) || flag13 ;
+        return (flag1 && flag3) || flag13;
     }
 }
