@@ -6,7 +6,7 @@ public class mayores {
         Scanner teclado = new Scanner(System.in);
         num1 = teclado.nextInt();
         num2 = teclado.nextInt();
-        System.out.println(num1+num2);
-        System.out.println(num1*num2);
+        System.out.println(num1 + num2);
+        System.out.println(num1 * num2);
     }
 }

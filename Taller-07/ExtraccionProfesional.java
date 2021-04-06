@@ -8,7 +8,7 @@ public class ExtraccionProfesional {
         String texto = in.nextLine();
         Pattern pattern = Pattern.compile(">(.*?)<");
         Matcher matcher = pattern.matcher(texto);
-        while(matcher.find())
+        while (matcher.find())
             System.out.print(matcher.group(1));
     }
 }

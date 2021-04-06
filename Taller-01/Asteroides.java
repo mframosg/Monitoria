@@ -8,7 +8,6 @@ public class Asteroides {
         numero_asteroides = teclado.nextInt();
         teclado.nextLine();
         nombre_asteroides = teclado.nextLine();
-        System.out.println("Los "+numero_asteroides+" asteroides "+nombre_asteroides+" caen del cielo");
+        System.out.println("Los " + numero_asteroides + " asteroides " + nombre_asteroides + " caen del cielo");
     }
-    
 }

@@ -6,8 +6,8 @@ public class Hipotenusa {
         double cat1, cat2, hipotenusa;
         cat1 = teclado.nextDouble();
         cat2 = teclado.nextDouble();
-        hipotenusa = cat1*cat1;
-        hipotenusa += cat2*cat2;
+        hipotenusa = cat1 * cat1;
+        hipotenusa += cat2 * cat2;
         hipotenusa = Math.sqrt(hipotenusa);
         System.out.println(String.format("%.2f", hipotenusa));
     }
